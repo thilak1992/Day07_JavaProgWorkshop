@@ -9,11 +9,11 @@ public class TicTacToe {
     static int turn = 1, flag = 0;
 
     public static void main(String[] args) {
-        System.out.println("Welcome to Tic Tac Toe Program !");     //creating board
-        createBoard();                                              //choosing letter and determining player and computer letter
-        choosingLetter();                                           //Displaying board to player
-        toss();                                                     //to play game until someone wins i.e. flag = 1
-        outerloop:
+        System.out.println("Welcome to Tic Tac Toe Program !");     
+        createBoard();                                              //creating board
+        choosingLetter();                                           //choosing letter and determining player and computer letter
+        toss();                                                     //Displaying board to player
+        outerloop:                                                  //to play game until someone wins i.e. flag = 1
 
         while(flag==0) {
             if((turn+1)%2==0) {                                     //to check whether game is tie or not
